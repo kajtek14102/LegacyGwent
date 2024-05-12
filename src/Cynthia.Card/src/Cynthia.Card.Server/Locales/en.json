@@ -2128,7 +2128,7 @@
         },
         "52007": {
             "Name": "Iorveth",
-            "Info": "Deploy: Deal 8 Damage to an enemy.\nIf the unit was destroyed, Boost all Elves in your hand by 1.",
+            "Info": "Deploy: Deal 8 Damage to an enemy.\nIf the unit was destroyed, Boost all loyal Elves in your hand by 1.",
             "Flavor": "国王还是乞丐于我并无差别，人类少一个算一个。"
         },
         "52008": {
