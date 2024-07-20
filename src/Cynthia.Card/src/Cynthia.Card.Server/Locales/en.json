@@ -1187,7 +1187,7 @@
         },
         "24014": {
             "Name": "Drowner",
-            "Info": "Deploy: Move an enemy to the opposite row and deal 2 Damage to it.\nIf that row is under a Hazard, deal 4 Damage instead.",
+            "Info": "Deploy: Move an enemy to the opposite row and deal 2 Damage to it.\nIf that row is under a Hazard, deal 5 Damage instead.",
             "Flavor": "尽管猎魔人想多赚些金币，但杀水鬼这活儿只值一枚银币，或者三个铜板——不能再多了。"
         },
         "24015": {
@@ -2922,7 +2922,7 @@
         },
         "70013": {
             "Name": "Corrupted Flaminca",
-            "Info": "Deploy: Discard a Torrential Rain from your deck, then Spawn Torrential Rain on this unit's row and on the opposing row.",
+            "Info": "Discard a torrential rain and apply a torrential rain on both sides, if there are no torrential rains in your deck, damage self by 4 and apply Torrential Rain on both sides.",
             "Flavor": ""
         },
         "70014": {
@@ -3282,7 +3282,7 @@
         },
         "70116": {
             "Name": "Deafening Siren",
-            "Info": "Whenever you apply Torrential Rain to an enemy row, resurrect on a random row.",
+            "Info": "At the end of your turn, if there is Rain on the opposite side, ressurect self to a random allied row.",
             "Flavor": ""
         },
         "70117": {
