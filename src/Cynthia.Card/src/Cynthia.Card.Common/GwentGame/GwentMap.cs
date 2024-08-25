@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 103);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 104);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -9778,7 +9778,7 @@ namespace Cynthia.Card
                 {
                     CardId ="64005",
                     Name="狂战士掠夺者",
-                    Strength=9,
+                    Strength=7,
                     Group=Group.Copper,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -9788,7 +9788,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cursed,Categorie.Soldier,Categorie.Cultist},
                     Flavor = "把汤乖乖喝完，不然狂战士就会过来，把你给掳走。",
-                    Info = "场上每有1个受伤、或为“诅咒生物”的友军单位，便获得1点增益。",
+                    Info = "场上每有一个受伤单位则获得1点增益，若该受伤单位为“诅咒生物”，则获得2点增益。",
                     CardArtsId = "15230200",
                 }
             },
@@ -10398,7 +10398,7 @@ namespace Cynthia.Card
                 {
                     CardId ="65002",
                     Name="狂暴的熊",
-                    Strength=14,
+                    Strength=13,
                     Group=Group.Copper,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -11850,7 +11850,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[] { Categorie.Special,Categorie.Organic},
                     Flavor = "",
-                    Info = "对一个友军单位造成4点伤害，随后从牌组打出一张铜色“呓语”牌并使其获得2点强化。",
+                    Info = "对一个非“诅咒生物”友方单位造成3点伤害，随后检视牌组中2张“呓语”牌，选择打出其中1张，并使其获得1点强化。",
                     CardArtsId = "d17750000",
                 }
             },
@@ -11930,7 +11930,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{Categorie.Beast},
                     Flavor = "",
-                    Info = "在你的回合结束时，如果对面有雨，将自己复活到随机的盟军行列。",
+                    Info = "每当在对方半场降下“倾盆大雨”，复活自身至随机排。",
                     CardArtsId = "d17790000",
                 }
             },
@@ -13036,7 +13036,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Leader,Categorie.Beast},
                     Flavor = "斯瓦勃洛唯一的戒律：屠戮。",
-                    Info = "对牌组中的所有单位牌造成2点伤害，随后使其获得2点强化。",
+                    Info = "对牌组中所有单位造成2点伤害，随后强化2点。若该单位位于牌组中且战力不大于2，直接进入墓地；若该单位位于手牌且战力不大于2，战力被设为1.",
                     CardArtsId = "d16650000",
                 }
             },

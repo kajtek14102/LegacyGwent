@@ -11,15 +11,27 @@ namespace Cynthia.Card
         public override async Task<int> CardPlayEffect(bool isSpying, bool isReveal)
         {
             var cards = Game.PlayersDeck[PlayerIndex].Where(x => x.CardInfo().CardUseInfo == CardUseInfo.MyRow).FilterCards(filter: x => x != Card).ToList();
-            if (cards.Count() == 0)
+            if (cards.Count() != 0)
+            {
+                foreach (var card in cards)
+                {
+                    await card.Effect.Damage(2, Card);
+                    await card.Effect.Strengthen(2, Card);
+                }  
+            }
+            var handcards = Game.PlayersHandCard[Card.PlayerIndex].Where(x=>(x.Status.Type == CardType.Unit));
+            if (handcards.Count() == 0)
             {
                 return 0;
             }
-            foreach (var card in cards)
-            {
-                await card.Effect.Damage(2, Card);
-                await card.Effect.Strengthen(2, Card);
-            }
+            foreach (var card in handcards)
+                {
+                    if (card.CardPoint() >=3)
+                        await card.Effect.Damage(2, Card);
+                        await card.Effect.Strengthen(2, Card);
+                    if (card.CardPoint() ==2)
+                    await card.Effect.Damage(1, Card);
+                } 
             return 0;
         }
     }
