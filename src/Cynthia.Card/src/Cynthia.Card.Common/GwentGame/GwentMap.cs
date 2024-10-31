@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 105);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 106);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -9097,7 +9097,7 @@ namespace Cynthia.Card
                 {
                     CardId ="62003",
                     Name="维伯约恩",
-                    Strength=8,
+                    Strength=11,
                     Group=Group.Gold,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -9107,7 +9107,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Cursed,Categorie.Cultist},
                     Flavor = "为了斯瓦勃洛！",
-                    Info = "“部署： 对敌人及其相邻单位造成 2 点伤害。如果某个单位已经受到伤害，则摧毁该单位。",
+                    Info = "选择一个敌方单位，如果其已经受伤，则直接摧毁它，否则对其造成2点伤害直至其受伤。",
                     CardArtsId = "20002800",
                 }
             },
@@ -13049,7 +13049,7 @@ namespace Cynthia.Card
                 {
                     CardId ="70099",
                     Name="斯瓦勃洛",
-                    Strength=11,
+                    Strength=9,
                     Group=Group.Leader,
                     Faction = Faction.Skellige,
                     CardUseInfo = CardUseInfo.MyRow,
@@ -13420,7 +13420,7 @@ namespace Cynthia.Card
                     IsDerive = false,
                     Categories = new Categorie[]{ },
                     Flavor = "先贤声称动物愚昧无知——纯属胡说八道。",
-                    Info = "回合结束时，若同排没有乌鸦则在左侧生成一个乌鸦。",
+                    Info = "回合结束时，若同排没有乌鸦，则在右侧生成一个乌鸦。",
                     CardArtsId = "d20110000",
                 }
             },
