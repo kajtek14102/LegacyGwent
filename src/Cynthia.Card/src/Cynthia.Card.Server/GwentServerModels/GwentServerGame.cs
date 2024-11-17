@@ -370,7 +370,7 @@ namespace Cynthia.Card.Server
             await BigRoundEnd();
         }
 
-        public async Task RoundPlayCard(int playerIndex, RoundInfo cardInfo)//哪一位玩家,打出第几张手牌,打到了第几排,第几列
+        public async Task RoundPlayCard(int playerIndex, RoundInfo cardInfo, bool autoUpdateCemetery = true, bool autoUpdateDeck = true)//哪一位玩家,打出第几张手牌,打到了第几排,第几列
         {   //获取卡牌,手牌或者领袖,将那个GameCard存起来
             var card = cardInfo.HandCardIndex == -1 ? PlayersLeader[playerIndex][0] : PlayersHandCard[playerIndex][cardInfo.HandCardIndex];
             //如果打出的是领袖,那么设定领袖已经被打出
@@ -385,6 +385,10 @@ namespace Cynthia.Card.Server
                     await card.Effect.CardUse();
                 else
                     await card.Effect.Play(cardInfo.CardLocation);
+                if (autoUpdateCemetery)
+                    await SetCemeteryInfo();
+                if (autoUpdateDeck)
+                    await SetDeckInfo();
             }
         }
 
@@ -980,7 +984,7 @@ namespace Cynthia.Card.Server
         }
         public async Task SetDeckInfo(int playerIndex)
         {
-            await Players[playerIndex].SendAsync(ServerOperationType.SetMyDeck, PlayersDeck[playerIndex].Select(x => new CardStatus(x.Status.CardId)).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList());
+            await Players[playerIndex].SendAsync(ServerOperationType.SetMyDeck, PlayersDeck[playerIndex].Select(x => x.Status).OrderBy(x => x.CardId).OrderByDescending(x => x.Group).ThenByDescending(x => x.Strength).ToList());
         }
         public async Task SetDeckInfo()
         {

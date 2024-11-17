@@ -38,7 +38,7 @@ namespace Cynthia.Card
         int TurnCardPlayedNum { get; set; }//本回合打出牌的数量
         Task<GameResult> Play();
         Task<bool> PlayerRound();
-        Task RoundPlayCard(int playerIndex, RoundInfo cardInfo);//哪一位玩家,打出第几张手牌,打到了第几排,第几列
+        Task RoundPlayCard(int playerIndex, RoundInfo cardInfo, bool autoUpdateCemetery = true, bool autoUpdateDeck = true);//哪一位玩家,打出第几张手牌,打到了第几排,第几列
         Task<IList<GameCard>> LogicDrawCard(int playerIndex, int count, Func<GameCard, bool> filter = null);//或许应该播放抽卡动画和更新数值
         //封装的抽卡
         Task<(List<GameCard>, List<GameCard>)> DrawCard(int player1Count, int player2Count, Func<GameCard, bool> filter = null);
