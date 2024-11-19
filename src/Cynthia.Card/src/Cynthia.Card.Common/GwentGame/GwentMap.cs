@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 107);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 108);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -14080,9 +14080,9 @@ namespace Cynthia.Card
                     IsCountdown = true,
                     IsDerive = false,
                     Categories = new Categorie[]{ Categorie.Ogroid},
-                    Flavor = "r600000",
+                    Flavor = "",
                     Info = "计数2：回合结束时如果你拥有最高战力单位且是食人魔，位于牌组顺序最靠前的水生孽鬼计数-1，当计数为0时从卡组召唤自身到随机排，并随机增益友方单位1点。",
-                    CardArtsId = "r10100000",
+                    CardArtsId = "r600000",
                 }
             },
             {
