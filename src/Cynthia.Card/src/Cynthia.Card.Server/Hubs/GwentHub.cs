@@ -52,6 +52,8 @@ namespace Cynthia.Card.Server
 
         public bool NewMatchOfPassword(string deckId, string password, int usingBlacklist) => _gwentServerService.Match(Context.ConnectionId, deckId, password, usingBlacklist);
 
+        public Task<bool> SendGG(string MyName, string EnemyName)  => _gwentServerService.SendGG(MyName,EnemyName);
+
         //停止匹配
         public async Task<bool> StopMatch() => await _gwentServerService.StopMatch(Context.ConnectionId);
         public bool Surrender() => _gwentServerService.Surrender(Context.ConnectionId); // 投降

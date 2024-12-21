@@ -102,7 +102,16 @@ namespace Cynthia.Card.Server
             //玩家未在线,失败
             return false;
         }
-
+        public async Task<bool> SendGG(string MyName, string EnemyName) // send your name to the opponent and trigger GG
+        {
+            if (_users.Any(x => x.Value.UserName == EnemyName))
+            {
+                var connectionId = _users.Single(x => x.Value.UserName == EnemyName).Value.ConnectionId;
+                await _hub.Clients.Client(connectionId).SendAsync("DisplayGG", MyName);
+                return false;
+            }
+            return false;
+        }
         public async Task<bool> StopMatch(string connectionId)
         {
             if (_users[connectionId].UserState != UserState.Match && _users[connectionId].UserState != UserState.PasswordMatch)
