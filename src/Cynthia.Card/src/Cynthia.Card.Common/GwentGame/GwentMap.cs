@@ -8,7 +8,7 @@ namespace Cynthia.Card
     public static class GwentMap
     {
         //更新CardMap内容请务必将CardMapVersion更新
-        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 109);
+        public static Version CardMapVersion { get; } = new Version(1, 0, 0, 110);
         public static IDictionary<string, int> CardIdMap { get; set; }
         public static string[] CardIdIndexMap { get; set; }
 
@@ -11246,7 +11246,7 @@ namespace Cynthia.Card
                     Categories = new Categorie[] { Categorie.Special },
                     Flavor = "",
                     Info = "对一个敌军随机单位造成4点伤害。被丢弃时，再次触发此能力，并将1张“恐狼勇士”加入牌组。",
-                    CardArtsId = "202462",
+                    CardArtsId = "202464",
                 }
             },
             {
