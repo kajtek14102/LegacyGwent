@@ -2542,7 +2542,7 @@
         },
         "62003": {
             "Name": "Vabjorn",
-            "Info": "Deploy: select a unit, if it is damaged, destroy it, otherwise damage it by 2 until it is damaged.",
+            "Info": "Deploy: select an enemy, if it is damaged, destroy it, otherwise damage it by 2 until it is damaged and damage self by half strength.",
             "Flavor": "为了斯瓦勃洛！"
         },
         "62004": {
@@ -2962,7 +2962,7 @@
         },
         "70013": {
             "Name": "Corrupted Flaminca",
-            "Info": "Discard a torrential rain and apply a torrential rain on both sides, if there are no torrential rains in your deck, damage self by 4 and apply Torrential Rain on both sides.",
+            "Info": "Deploy: Discard a torrential rain from deck and apply a torrential rain on both sides, if there are no torrential rains in your deck, weaken self by 4 and apply Torrential Rain on both sides.",
             "Flavor": ""
         },
         "70014": {
@@ -3202,7 +3202,7 @@
         },
         "70092": {
             "Name": "Svalblod Brawler",
-            "Info": "Deploy: Damage an enemy by 4. If this unit is under a Hazard, deal 8 Damage instead.",
+            "Info": "Deploy: damage an enemy by twice the number of Torrential Rains on the board.",
             "Flavor": "史凯利格容不下罪犯和无赖……他们的罪行必须偿还."
         },
         "70093": {
@@ -3322,7 +3322,7 @@
         },
         "70116": {
             "Name": "Deafening Siren",
-            "Info": "Whenever you apply Torrential Rain to an enemy row, resurrect on a random row.",
+            "Info": "Whenever you apply Torrential Rain to an enemy row, summon from the graveyard on a random row.",
             "Flavor": ""
         },
         "70117": {
@@ -3332,7 +3332,7 @@
         },
         "70118": {
             "Name": "Lyrian Scytheman",
-            "Info": "Deploy: Boost a Bronze unit in your deck by 3.",
+            "Info": "Deploy: Boost a Bronze unit in your deck by 2.",
             "Flavor": ""
         },
         "70119": {
