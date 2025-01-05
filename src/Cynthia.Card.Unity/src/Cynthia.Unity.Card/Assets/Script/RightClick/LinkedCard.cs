@@ -83,18 +83,15 @@ public class LinkedCard : MonoBehaviour
 
         CountdownShow.SetActive(CardInfo.IsCountdown);
         //
-        RectTransform rectTransform = FactionIcon.rectTransform;
+        RectTransform rectTransform = FactionIcon.GetComponent<RectTransform>();
+        Vector2 currentSize = rectTransform.sizeDelta;
         if(CardInfo.IsCountdown)
         {
-            Vector3 currentPosition = rectTransform.localPosition;
-            currentPosition.y = 190;  
-            rectTransform.localPosition = currentPosition;
+            rectTransform.sizeDelta = new Vector2(currentSize.x, 180);
         }
         else
         {
-            Vector3 currentPosition = rectTransform.localPosition;
-            currentPosition.y = 95;  
-            rectTransform.localPosition = currentPosition;
+            rectTransform.sizeDelta = new Vector2(currentSize.x, 120);
         }
         //
         Countdown.text = CardInfo.Countdown.ToString();
