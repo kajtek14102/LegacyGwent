@@ -1232,7 +1232,7 @@
         },
         "24015": {
             "Name": "Wild Hunt Drakkar",
-            "Info": "Aura: Boost all Wild Hunt allies by 1.",
+            "Info": "Deploy: Boost all Wild Hunt allies by 1. Whenever an allied Wild Hunt unit appears boost it by 1.",
             "Flavor": "鬼船纳吉尔法的船头劈开波浪，将海水破成两道。号角响彻天际，汉姆多尔站在燃烧的彩虹之上，迎接敌人的来犯。白霜降临，狂风和暴雨近在咫尺……"
         },
         "24016": {

@@ -1232,7 +1232,7 @@
         },
         "24015": {
             "Name": "Okręt Dzikiego Gonu",
-            "Info": "Aura: Wzmocnij wszystkich sojuszników Dzikiego Gonu o 1.",
+            "Info": "Rozmieszczenie: Wzmocnij wszystkich sojuszników dzikiego gonu o 1. Za każdym razem gdy pojawi się sojusznik dzikiego gonu wmocnij go o 1.",
             "Flavor": "Fala bije o brzeg, pchana dziobem upiornego Naglfara. Rozbrzmiewa róg Hemdalla stojącego twarzą ku wrogom na tęczowym łuku Bifrostu. Nadciąga Białe Zimno, nadciąga wichura i zamieć..."
         },
         "24016": {
