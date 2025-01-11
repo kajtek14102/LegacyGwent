@@ -82,18 +82,18 @@
         "MainMenu_RankDesc": "Zagraj rankingową partie Gwenta",
         "MainMenu_RankListTitle": "RANKING",
         "MainMenu_RankListDesc": "Pokaż najlepszych graczy",
-        "MainMenu_PlayersOnlineText": "Liczba Graczy Online:",
-        "MainMenu_PlayingPvpText": "Liczba Graczy (PvP):",
-        "MainMenu_PlayingvsAIText": "Liczba Graczy (vs AI):",
-        "MainMenu_PlayingCasualText": "Liczba Graczy:",
-        "MainMenu_PlayingRankText": "Liczba Graczy:",
+        "MainMenu_PlayersOnlineText": "Graczy Online:",
+        "MainMenu_PlayingPvpText": "Graczy (PvP):",
+        "MainMenu_PlayingvsAIText": "Graczy (vs AI):",
+        "MainMenu_PlayingCasualText": "Graczy:",
+        "MainMenu_PlayingRankText": "Graczy:",
         "MainMenu_CasualFlagText": "Przeciwnik Znaleziony",
         "MainMenu_RankFlagText": "Przeciwnik Znaleziony",
         "Matchmaking_Menu_CasualFlagText": "Przeciwnik Znaleziony",
         "Matchmaking_Menu_RankFlagText": "Przeciwnik Znaleziony",
-        "Matchmaking_Menu_CasualText": "Graczy w trybie swobodnym:",
-        "Matchmaking_Menu_RankText": "Graczy w trybie rankingowym:",
-        "Matchmaking_Menu_PlayersOnlineText": "Liczba Graczy Online:",
+        "Matchmaking_Menu_CasualText": "W trybie swobodnym:",
+        "Matchmaking_Menu_RankText": "W trybie rankingowym:",
+        "Matchmaking_Menu_PlayersOnlineText": "Graczy Online:",
         "MatchmakingMenu_Title": "MECZ SWOBODNY",
         "MatchmakingMenu_DeckReady": "Talia gotowa!",
         "MatchmakingMenu_PlayButton": "GRAJ",
@@ -133,7 +133,7 @@
         "PopupWindow_LoggedOutTitle": "WYLOGOWANO",
         "PopupWindow_LoggedOutDesc": "Ktoś inny zalogował się na Twoje konto!",
         "PopupWindow_DisconnectedTitle": "ROZŁĄCZONO",
-        "PopupWindow_DisconnectedDesc": "Spróbuj sie zalogować ponownie!\nNote!\nIn obecna wersja, jeżeli zostałeś rozłączony w trakcie gry-zrestartuj klient.",
+        "PopupWindow_DisconnectedDesc": "Spróbuj zalogować się ponownie! \nJeżeli zostałeś rozłączony w trakcie gry-zrestartuj klient.",
         "PopupWindow_QuitTitle": "WYJDŹ",
         "PopupWindow_QuitDesc": "Czy na pewno chcesz wyjść?",
         "PopupWindow_ReceivedMessageTitle": "Otrzymałeś wiadomość z serwera",
@@ -316,8 +316,8 @@
         "Sihil_1_DamageOdd": "Zadaj 3 pkt obrażeń wszystkim wrogom o nieparzystej sile.",
         "Sihil_2_DamageEven": "Zadaj 3 pkt obrażeń wszystkim wrogom o parzystej sile.",
         "Sihil_3_PlayUnit": "Zagraj losową brązową lub srebrną jednostkę ze swojej talii.",
-        "VriheddSaboteur_1_RandomItem": "Play a random Bronze Item",
-        "VriheddSaboteur_2_STItem": "Chosse and play a Scoia'tael Bronze Item"
+        "VriheddSaboteur_1_RandomItem": "Zagraj losowy brązowy przedmiot.",
+        "VriheddSaboteur_2_STItem": "Zagraj brązowy przedmiot Scoia'tael."
     },
     "CardLocales": {
         "12001": {
@@ -2542,7 +2542,7 @@
         },
         "62003": {
             "Name": "Vabjorn",
-            "Info": "Rozmieszczenie: Wybierz jednostke. Jeśli jest zraniona zniszcz ją. Jeśli nie zadawaj 2pkt obrażeń aż będzie zraniona.",
+            "Info": "Rozmieszczenie: Wybierz wroga. Jeżeli jest zraniony, zniszcz go. W przeciwnym wypadku zadawaj mu 2pkt obrażeń dopóki nie będzie zraniony i zadaj sobie obrażenia równe połowie siły tej jednostki",
             "Flavor": "Krew dla Svalbloda! Czaszki na jego tron!"
         },
         "62004": {
@@ -2962,7 +2962,7 @@
         },
         "70013": {
             "Name": "Upadła Flaminika",
-            "Info": "Odrzuć Ulewny Deszcz i zastosuj Ulewny Deszcz po obu stronach, jeśli w twojej talii nie ma Ulewnych Deszczy, zadaj sobie obrażenia o 4 i zastosuj Ulewny Deszcz po obu stronach.",
+            "Info": "Rozmieszczenie: Stwórz deszcz w rzędzie tej jednostki i przeciwnim rzędzie. Odrzuć ulewny deszcz z Twojej talii. Jeśi nie masz deszczu w tali osłab te jednostkę o 4pkt siły.",
             "Flavor": ""
         },
         "70014": {
@@ -3202,7 +3202,7 @@
         },
         "70092": {
             "Name": "Zawiadiaka Svalbloda",
-            "Info": "Rozmieszczenie: Zadaj wrogowi 4 pkt obrażeń. Jeśli jest pod wływem zagrożenia, zadaj zamiast tego 8 pkt obrażeń.",
+            "Info": "Rozmieszczenie: Zadaj wrogowi obrażenia równe dwukrotności liczby rzędów znajdujących się pod wpływem Ulewnego Deszczu.",
             "Flavor": "Żaden człowiek nie jest w stanie dorównać syrenom w śpiewie. Niektórzy jednak są na tyle utalentowani, aby zwabić je swym głosem."
         },
         "70093": {
@@ -3232,7 +3232,7 @@
         },
         "70098": {
             "Name": "Sabotażysta Vrihedd",
-            "Info": "Play a random item or choose and play a Scoia'tael item.",
+            "Info": "Wybierz jedno: Zagraj losowy brązowy przedmiot, lub Zagraj przedmiot Scoia'tael.",
             "Flavor": "I can find the bull's-eye from a hundred paces! Perhaps not with my first shot, mind you..."
         },
         "70099": {
@@ -3322,7 +3322,7 @@
         },
         "70116": {
             "Name": "Ogłuszająca Syrena",
-            "Info": "Za każdym razem, gdy stworzysz ulewny deszcz, wskrześ tę jednostkę w losowym rzędzie.",
+            "Info": "Za każdym razem kiedy rzucisz Ulewny Desz na rząd przeciwnika przyzwij tę jednostkę z cmentarza",
             "Flavor": ""
         },
         "70117": {
@@ -3332,7 +3332,7 @@
         },
         "70118": {
             "Name": "Lyryjski Kosynier",
-            "Info": "Deploy: Boost a Bronze unit in your deck by 3.",
+            "Info": "Deploy: Boost a Bronze unit in your deck by 2.",
             "Flavor": ""
         },
         "70119": {
