@@ -2502,7 +2502,7 @@
         },
         "54032": {
             "Name": "Crushing Trap",
-            "Info": "Deal 6 Damage to the units at the end of an enemy row.",
+            "Info": "Deal 6 Damage to the units at the ends of an enemy row.",
             "Flavor": "要是被它击倒，你就别想在爬起来了。"
         },
         "55001": {
