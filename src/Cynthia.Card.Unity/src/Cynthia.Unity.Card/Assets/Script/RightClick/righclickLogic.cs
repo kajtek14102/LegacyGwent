@@ -149,7 +149,7 @@ public class righclickLogic : MonoBehaviour
             Destroy(child.gameObject);
         }
         List<string> LinkedCardsList = CardInfo.LinkedCards;
-        Debug.Log(CardInfo.LinkedCards);
+        //Debug.Log(CardInfo.LinkedCards);
         if (LinkedCardsList.Count > 3)
         {
             Slider.SetActive(true);
