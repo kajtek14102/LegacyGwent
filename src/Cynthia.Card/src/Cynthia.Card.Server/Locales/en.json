@@ -3112,7 +3112,7 @@
         },
         "70070": {
             "Name": "Highwaymen",
-            "Info": "If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.\n(Strays of Spalla; 5 Strength; Single-Use: Deploy: Look at 2 different random Bronze units in your deck, then play one)",
+            "Info": "Single-Use: If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.\n(Strays of Spalla; 5 Strength; Single-Use: Deploy: Look at 2 different random Bronze units in your deck, then play one)",
             "Flavor": "“商人？抹了。马匹？卖了。”"
         },
         "70071": {
