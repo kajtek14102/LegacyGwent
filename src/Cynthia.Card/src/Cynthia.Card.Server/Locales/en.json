@@ -2897,7 +2897,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Spying.\nDeathwish: Spawn a Bear on the opposite row.\n(Bear; 11 Strength)",
+            "Info": "Spying.\nDeathwish: If its opponent turn, Spawn a Bear on the opposite row.\n(Bear; 11 Strength)",
             "Flavor": "高个子的是威尔玛。他右边的是威尔弗雷德。结巴的那个是威尔海姆。"
         },
         "70001": {

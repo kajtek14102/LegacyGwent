@@ -2897,7 +2897,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Szpieg. Zemsta: Stwórz niedźwiedzia w przecinym rzędzie.\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Szpieg. Zemsta: Jeśli jest tura przeciwnika, Stwórz niedźwiedzia w przecinym rzędzie.\n(Niedźwiedź; 11 pkt siły)",
             "Flavor": "Brak"
         },
         "70001": {
