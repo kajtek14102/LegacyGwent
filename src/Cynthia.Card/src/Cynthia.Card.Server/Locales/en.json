@@ -2017,7 +2017,7 @@
         },
         "44010": {
             "Name": "Cursed Knight",
-            "Info": "Deploy: Transform a Cursed ally into a copy of this unit.\n2 Armor.",
+            "Info": "Deploy: Transform a Cursed ally into a base copy of this unit.\n2 Armor.",
             "Flavor": "深陷无尽的战斗，却早已忘记了起因。"
         },
         "44011": {
