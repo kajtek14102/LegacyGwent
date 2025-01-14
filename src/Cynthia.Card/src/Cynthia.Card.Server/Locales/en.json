@@ -1622,7 +1622,7 @@
         },
         "34004": {
             "Name": "Nilfgaardian Knight",
-            "Info": "Deploy: Reveal a random card in your hand.\n2 Armor.",
+            "Info": "Deploy: Reveal a random card in your hand of the lowest colour possible.\n2 Armor.",
             "Flavor": "出自名门望族，生于金塔之城，组成帝国的精锐部队。"
         },
         "34005": {
