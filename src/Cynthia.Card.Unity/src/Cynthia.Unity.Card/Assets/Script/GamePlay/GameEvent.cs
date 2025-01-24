@@ -7,9 +7,13 @@ using System.Linq;
 using Alsein.Extensions;
 using System.Threading.Tasks;
 using Alsein.Extensions.IO;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameEvent : MonoBehaviour
 {
+    static public bool RighClickActive;
+    public static string RightClickedCardID;
     public ArtCard ShowCard;
     public float ArrowsZ = -6f;
     //可被拖上(6排,以及我方墓地)
@@ -89,11 +93,7 @@ public class GameEvent : MonoBehaviour
     //最开始
     private void Start()
     {
-        // CreateCard(new CardStatus("22014"), new CardLocation(RowPosition.MyRow1, 0));
-        // CreateCard(new CardStatus("22014"), new CardLocation(RowPosition.MyRow1, 0));
-        // CreateCard(new CardStatus("22014"), new CardLocation(RowPosition.MyRow1, 0));
-        // CreateCard(new CardStatus("22014"), new CardLocation(RowPosition.MyRow1, 0));
-
+        RighClickActive=false;
         NowOperationType = GameOperationType.None;
 
 #if UNITY_ANDROID || UNITY_IOS
@@ -163,6 +163,7 @@ public class GameEvent : MonoBehaviour
             }
             MyCemetery.IsCanDrop = true;
         }
+        
     }
     //当前正在拖拽的卡牌
     public CardMoveInfo DragCard
@@ -171,15 +172,18 @@ public class GameEvent : MonoBehaviour
         set
         {
             if (_dragCard == value) return;
-            if (_dragCard != null)//放弃当前所拖
+            if (!RighClickActive)
             {
-                _dragCard.IsDrag = false;
-                _dragCard.ZPosition += 2f;
+                if (_dragCard != null)//放弃当前所拖
+                {
+                    _dragCard.IsDrag = false;
+                    _dragCard.ZPosition += 2f;
+                }
+                _dragCard = value;
+                if (value == null) return;
+                _dragCard.IsDrag = true;
+                _dragCard.ZPosition -= 2f;
             }
-            _dragCard = value;
-            if (value == null) return;
-            _dragCard.IsDrag = true;
-            _dragCard.ZPosition -= 2f;
         }
     }
     //当前选择
@@ -280,11 +284,17 @@ public class GameEvent : MonoBehaviour
     // #if UNITY_STANDALONE_WIN
     private void OnMouseDown()
     {
-        DownEffect();
+        if (!RighClickActive)
+        {
+            DownEffect();
+        }
     }
     private async void OnMouseUp()
     {
-        await UpEffect();
+        if (!RighClickActive)
+        {
+            await UpEffect();
+        }
     }
     // #endif
     private void DownEffect()
@@ -428,27 +438,36 @@ public class GameEvent : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
 #endif
         {
-            var items = GetMouseAllRaycast();
-            var trueitem = items.Select(x => x.GetComponent<CanRightOn>()).Where(x => x != null);
-            if (trueitem.Count() == 0)
-                return;
-            switch (trueitem.First().Type)
+            if (!RighClickActive)
             {
-                case RightOnType.MyCemetery:
-                    GameCardShowControl.ShowMyCemetery();
-                    break;
-                case RightOnType.EnemyCemetery:
-                    GameCardShowControl.ShowEnemyCemetery();
-                    break;
-                case RightOnType.MyDeck:
-                    Debug.Log("点了卡组");
-                    GameCardShowControl.ShowMyDeck();
-                    break;
-                case RightOnType.Card:
-                    Debug.Log("右键点击了卡牌");
-                    var card = trueitem.First();
-                    Debug.Log("卡牌On?:" + card.GetComponent<CardMoveInfo>().IsOn);
-                    break;
+                var items = GetMouseAllRaycast();
+                var trueitem = items.Select(x => x.GetComponent<CanRightOn>()).Where(x => x != null);
+                if (trueitem.Count() == 0)
+                    return;
+                switch (trueitem.First().Type)
+                {
+                    case RightOnType.MyCemetery:
+                        GameCardShowControl.ShowMyCemetery();
+                        break;
+                    case RightOnType.EnemyCemetery:
+                        GameCardShowControl.ShowEnemyCemetery();
+                        break;
+                    case RightOnType.MyDeck:
+                        Debug.Log("点了卡组");
+                        GameCardShowControl.ShowMyDeck();
+                        break;
+                    case RightOnType.Card:
+                        Debug.Log("右键点击了卡牌");
+                        var card = trueitem.First();
+                        Debug.Log("卡牌On?:" + card.GetComponent<CardMoveInfo>().IsOn);
+                        RightClickedCardID=card.GetComponent<CardShowInfo>().CurrentCore.CardId;
+                        if (!string.IsNullOrEmpty(RightClickedCardID))
+                        {
+                            RighClickActive=true;
+                            SceneManager.LoadScene("RightClick", LoadSceneMode.Additive);
+                        }
+                        break;
+                }
             }
         }
     }
