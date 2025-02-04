@@ -739,7 +739,7 @@
         },
         "13042": {
             "Name": "Udane Łowy",
-            "Info": "Jeśli przegrywasz, stwórz Mantikorę Cesarską. Jeśli wygrywasz lub remisujesz, stwórz Jad Mantikory.",
+            "Info": "Jeśli przegrywasz, stwórz Mantikorę Cesarską. Jeśli wygrywasz, stwórz Jad Mantikory.",
             "Flavor": "Na cholerę mi to szkaradziejstwo przywlokłeś, wiedźminie?! „Przynieś mi głowę potwora” to była tylko chędożona figura retoryczna!"
         },
         "13043": {
@@ -1234,7 +1234,7 @@
         },
         "24015": {
             "Name": "Okręt Dzikiego Gonu",
-            "Info": "Aura: Wzmocnij wszystkich sojuszników Dzikiego Gonu o 1.",
+            "Info": "Rozmieszczenie: Wzmocnij wszystkich sojuszników dzikiego gonu o 1. Za każdym razem gdy pojawi się sojusznik dzikiego gonu wmocnij go o 1.",
             "Flavor": "Fala bije o brzeg, pchana dziobem upiornego Naglfara. Rozbrzmiewa róg Hemdalla stojącego twarzą ku wrogom na tęczowym łuku Bifrostu. Nadciąga Białe Zimno, nadciąga wichura i zamieć..."
         },
         "24016": {
@@ -1624,7 +1624,7 @@
         },
         "34004": {
             "Name": "Nilfgaardzki Rycerz",
-            "Info": "Rozmieszczenie: Ujawnij losową kartę w swojej ręce. 2 pkt pancerza.",
+            "Info": "Rozmieszczenie: Odkryj losową kartę w swojej ręce, preferując najpierw brązowe, potem srebrne, a na końcu złote karty. 2 pkt pancerza.",
             "Flavor": "Synowie szlachetnych rodów, urodzeni w mieście Złotych Wież, tworzą prawdziwą elitę cesarskiej armii."
         },
         "34005": {
@@ -2899,7 +2899,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Szpieg. Zemsta: Stwórz niedźwiedzia w przecinym rzędzie.\n(Niedźwiedź; 11 pkt siły)",
+            "Info": "Szpieg. Zemsta: Jeśli jest tura przeciwnika, Stwórz niedźwiedzia w przecinym rzędzie.\n(Niedźwiedź; 11 pkt siły)",
             "Flavor": ""
         },
         "70001": {
@@ -3114,7 +3114,7 @@
         },
         "70070": {
             "Name": "Rezuni",
-            "Info": "Jeśli w Twojej startowej talii są wyłącznie brązowe karty, stwórz Kundli ze Spalli i wtasuj 2 kopie Kundli ze Spalli do Twojej talii.\n(Kundle ze Spalii; 5 pkt siły; Jednorazowa. Rozmieszczenie: Zobacz 2 brązowe jednostki z Twojej talii i zagraj jedną z nich)",
+            "Info": "Jednorazowa: Jeśli w Twojej startowej talii są wyłącznie brązowe karty, stwórz Kundli ze Spalli i wtasuj 2 kopie Kundli ze Spalli do Twojej talii.\n(Kundle ze Spalii; 5 pkt siły; Jednorazowa. Rozmieszczenie: Zobacz 2 brązowe jednostki z Twojej talii i zagraj jedną z nich)",
             "Flavor": "Kupca weźmiem na męki, a kobyły na targ."
         },
         "70071": {

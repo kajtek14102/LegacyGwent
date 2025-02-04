@@ -739,7 +739,7 @@
         },
         "13042": {
             "Name": "Glorious Hunt",
-            "Info": "If losing, Spawn an Imperial Manticore.\nIf winning or tied, Spawn Manticore Venom.\n(Imperial Manticore; 13 Strength)\n(Manticore Venom: Damage a unit by 13)",
+            "Info": "If losing, Spawn an Imperial Manticore.\nIf winning, Spawn Manticore Venom.\n(Imperial Manticore; 13 Strength)\n(Manticore Venom: Damage a unit by 13)",
             "Flavor": "By the gods' gonads, witcher, why'd you bring me this filth?! I want that beast's head! - that was a ploughin' figure of ploughin' speech!"
         },
         "13043": {
@@ -1234,7 +1234,7 @@
         },
         "24015": {
             "Name": "Wild Hunt Drakkar",
-            "Info": "Aura: Boost all Wild Hunt allies by 1.",
+            "Info": "Deploy: Boost all Wild Hunt allies by 1. Whenever an allied Wild Hunt unit appears boost it by 1.",
             "Flavor": "Waves pummel the shore, waves pushed by the prow of the spectral Naglfar. Hemdall's horn rings in the air, and Hemdall stands facing his enemies atop Bifrost, the burning rainbow. The White Frost is nigh, nigh is the time of gale and storm…"
         },
         "24016": {
@@ -1624,8 +1624,8 @@
         },
         "34004": {
             "Name": "Nilfgaardian Knight",
-            "Info": "Deploy: Reveal a random card in your hand.\n2 Armor.",
-            "Flavor": "Sons of noble houses, born in the City of the Golden Towers, form the elite backbone of the Imperial Army."
+            "Info": "Deploy: Reveal a random card in your hand of the lowest colour possible.\n2 Armor.",
+            "Flavor": "Sons of noble houses, born in the City of the Golden Towers, form the elite backbone of the Imperial Army.
         },
         "34005": {
             "Name": "Impera Enforcers",
@@ -2019,7 +2019,7 @@
         },
         "44010": {
             "Name": "Cursed Knight",
-            "Info": "Deploy: Transform a Cursed ally into a copy of this unit.\n2 Armor.",
+            "Info": "Deploy: Transform a Cursed ally into a base copy of this unit.\n2 Armor.",
             "Flavor": "He fights an endless war whose beginning he no longer remembers."
         },
         "44011": {
@@ -2504,7 +2504,7 @@
         },
         "54032": {
             "Name": "Crushing Trap",
-            "Info": "Deal 6 Damage to the units at the end of an enemy row.",
+            "Info": "Deal 6 Damage to the units at the ends of an enemy row.",
             "Flavor": "When this knocks you down, you don't get up again."
         },
         "55001": {
@@ -2899,7 +2899,7 @@
         },
         "65007": {
             "Name": "Wilmar",
-            "Info": "Spying.\nDeathwish: Spawn a Bear on the opposite row.\n(Bear; 11 Strength)",
+            "Info": "Spying.\nDeathwish: If its opponent turn, Spawn a Bear on the opposite row.\n(Bear; 11 Strength)",
             "Flavor": ""
         },
         "70001": {
@@ -3114,7 +3114,7 @@
         },
         "70070": {
             "Name": "Highwaymen",
-            "Info": "If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.\n(Strays of Spalla; 5 Strength; Single-Use: Deploy: Look at 2 different random Bronze units in your deck, then play one)",
+            "Info": "Single-Use: If there are only Bronze cards in your starting deck, Spawn a Strays of Spalla, then add 2 Strays of Spalla to your deck.\n(Strays of Spalla; 5 Strength; Single-Use: Deploy: Look at 2 different random Bronze units in your deck, then play one)",
             "Flavor": "We'll torture the merchant and sell the horses."
         },
         "70071": {
