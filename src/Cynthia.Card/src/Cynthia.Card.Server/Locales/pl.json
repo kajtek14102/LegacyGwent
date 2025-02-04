@@ -136,6 +136,8 @@
         "PopupWindow_DisconnectedDesc": "Spróbuj zalogować się ponownie! \nJeżeli zostałeś rozłączony w trakcie gry-zrestartuj klient.",
         "PopupWindow_QuitTitle": "WYJDŹ",
         "PopupWindow_QuitDesc": "Czy na pewno chcesz wyjść?",
+        "PopupWindow_Surrender_title": "Rezygnacja?",
+        "PopupWindow_Surrender_content": "Czy napewno chcesz się poddać?",
         "PopupWindow_ReceivedMessageTitle": "Otrzymałeś wiadomość z serwera",
         "PopupWindow_NoDeckTitle": "BRAK TALII",
         "PopupWindow_NoDeckDesc": "Nie masz dostępnej tali. Stwórz talie i wróć tutaj.",
@@ -437,7 +439,7 @@
         },
         "12024": {
             "Name": "Yennefer",
-            "Info": "Rozmieszczenie: Wybierz: Stwórz Jednorożca, który wzmacnia wszystkie inne jednostki o 2 lub Stwórz Chironexa, który zadaje wszystkim innym jednostkom 2 pkt obrażeń.\nJednorożec; 1 Siły)\n(Chironex; 4 Siły)",
+            "Info": "Rozmieszczenie: Wybierz: Stwórz Jednorożca, który wzmacnia wszystkie inne jednostki o 2 lub Stwórz Chironexa, który zadaje wszystkim innym jednostkom 2 pkt obrażeń.\n(Jednorożec; 1 Siły)\n(Chironex; 4 Siły)",
             "Flavor": "Odziana w kompozycję czerni i bieli, przywodziła na myśl grudniowy poranek."
         },
         "12025": {
@@ -3527,7 +3529,7 @@
         },
         "70158": {
             "Name": "Coën of Poviss",
-            "Info": "Deal 5 Damage.If the target is destroyed, Reduce the damage by 1 and repeat once.",
+            "Info": "Zadaj 5 pkt obrażeń. Jeśli cel został zniszczony obnirz obrażenia o 1 i powtórz tę umiejętność.",
             "Flavor": ""
         },
         "70159": {
