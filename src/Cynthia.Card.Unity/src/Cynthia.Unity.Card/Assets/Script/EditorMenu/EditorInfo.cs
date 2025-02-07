@@ -458,6 +458,8 @@ public class EditorInfo : MonoBehaviour
         {
             ShowArtCard.CurrentCore = card;
             ShowArtCard.gameObject.SetActive(isOver);
+            string LastHoveredCard=card.CardId;
+            Debug.Log("LAST HOVERED: "+LastHoveredCard);
         }
     }
 
