@@ -62,7 +62,18 @@ public class righclickLogic : MonoBehaviour
         ExitButtonText.text=translator.GetText("LoginMenu_ExitButton");
         BackButtonText.text=translator.GetText("RegisterMenu_BackButton");
         History = new List<string>();
-        string DisplayID = GameEvent.RightClickedCardID;
+        string FromGamePlay = GameEvent.RightClickedCardID;
+        string FromEditor = EditorInfo.RightClickedCardID;
+        
+        if (SceneManager.GetSceneByName("GamePlay").isLoaded)
+        {
+            DisplayID=FromGamePlay;
+        }
+        if (SceneManager.GetSceneByName("Game").isLoaded)
+        {
+            DisplayID=FromEditor;
+        }
+
         UpdateCard(DisplayID);
     }
     public static string RemoveContentInParentheses(string input)

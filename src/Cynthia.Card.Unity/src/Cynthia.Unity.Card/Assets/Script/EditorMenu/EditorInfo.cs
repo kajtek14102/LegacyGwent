@@ -16,8 +16,12 @@ using UnityEngine.Events;
 using static UnityEngine.UI.Scrollbar;
 using Cynthia.Card.Common.Extensions;
 using Microsoft.AspNetCore.SignalR.Client;
+using UnityEngine.SceneManagement;
 public class EditorInfo : MonoBehaviour
 {
+    private string LastHoveredCard;
+    //static public bool RighClickActive;
+    public static string RightClickedCardID;
     //展示卡牌相关
     public ArtCard EditorArtCard;
     public ArtCard ShowArtCard;
@@ -453,14 +457,30 @@ public class EditorInfo : MonoBehaviour
         {
             EditorArtCard.CurrentCore = card;
             EditorArtCard.gameObject.SetActive(isOver);
+            LastHoveredCard=card.CardId;
         }
         else if (EditorStatus == EditorStatus.ShowCards)
         {
             ShowArtCard.CurrentCore = card;
             ShowArtCard.gameObject.SetActive(isOver);
+            LastHoveredCard=card.CardId;
+        }
+        //Debug.Log("LAST HOVERED: "+LastHoveredCard);
+    }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (EditorArtCard.gameObject.activeSelf || ShowArtCard.gameObject.activeSelf)
+            {
+                RightClickedCardID = LastHoveredCard;
+                Debug.Log("Right Clicked ID: "+RightClickedCardID);
+                //RighClickActive=true;
+                SceneManager.LoadScene("RightClick", LoadSceneMode.Additive);
+            }
         }
     }
-
+            
     public void ClickSwitchUICard(CardStatus card)
     {
         if (EditorStatus == EditorStatus.SwitchFaction)
