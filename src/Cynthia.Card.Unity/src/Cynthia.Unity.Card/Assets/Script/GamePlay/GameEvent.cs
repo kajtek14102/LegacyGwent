@@ -461,13 +461,15 @@ public class GameEvent : MonoBehaviour
                         Debug.Log("右键点击了卡牌");
                         var card = trueitem.First();
                         Debug.Log("卡牌On?:" + card.GetComponent<CardMoveInfo>().IsOn);
-                        RightClickedCardID=card.GetComponent<CardShowInfo>().CurrentCore.CardId;
-                        if (!string.IsNullOrEmpty(RightClickedCardID))
-                        {
-                            RighClickActive=true;
-                            SceneManager.LoadScene("RightClick", LoadSceneMode.Additive);
-                        }
-                        break;
+                        #if !UNITY_ANDROID
+                            RightClickedCardID=card.GetComponent<CardShowInfo>().CurrentCore.CardId;
+                            if (!string.IsNullOrEmpty(RightClickedCardID))
+                            {
+                                RighClickActive=true;
+                                SceneManager.LoadScene("RightClick", LoadSceneMode.Additive);
+                            }
+                            break;
+                        #endif
                 }
             }
         }
