@@ -2189,7 +2189,7 @@
         },
         "52003": {
             "Name": "Xavier Moran",
-            "Info": "Rozmieszczenie: Wzmocnij tę jednostkę o siłę początkową ostatniego zagranego przez ciebie innego Krasnoluda.",
+            "Info": "Rozmieszczenie: Wzmocnij tę jednostkę o siłę bazową krasnoluda o największej sile bazowej spośród zagranych przez Ciebie w tej rundzie.",
             "Flavor": "No, co jest? Śmierdzi ci sarnina, królewiczu?"
         },
         "52004": {

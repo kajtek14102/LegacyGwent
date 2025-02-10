@@ -2189,7 +2189,7 @@
         },
         "52003": {
             "Name": "Xavier Moran",
-            "Info": "Deploy: Boost this unit by the starting Power of the Dwarf with the strongest starting Power you played this round.",
+            "Info": "Deploy: Boost this unit by the base Power of the highest base power Dwarf you played this round.",
             "Flavor": "Well? Somethin' wrong? Venison a wee bit rank for ye? Ehh, princess?"
         },
         "52004": {
