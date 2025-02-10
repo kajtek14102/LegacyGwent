@@ -1249,7 +1249,7 @@
         },
         "24018": {
             "Name": "Celaeno Harpy",
-            "Info": "Deploy: Spawn 2 Harpy Eggs to its left. (Harpy Egg; 1 Strength; When Consumed by another unit, Boost that unit by an additional 5. Deathwish: Spawn a Harpy Hatchling on a random row) (Harpy Hatchling; 1 Strength)",
+            "Info": "Deploy: Spawn 2 Harpy Eggs to its left. (Harpy Egg; 1 Strength; When Consumed by another unit, Boost that unit by an additional 4. Deathwish: Spawn a Harpy Hatchling on a random row) (Harpy Hatchling; 1 Strength)",
             "Flavor": "Common harpies feed on carrion. Celaeno harpies… they feed on dreams."
         },
         "24019": {
@@ -1369,7 +1369,7 @@
         },
         "25004": {
             "Name": "Harpy Egg",
-            "Info": "When Consumed by another unit, Boost that unit by an additional 5.\nDeathwish: Spawn a Harpy Hatchling on a random row.\n(Harpy Hatchling; 1 Strength)",
+            "Info": "When Consumed by another unit, Boost that unit by an additional 4.\nDeathwish: Spawn a Harpy Hatchling on a random row.\n(Harpy Hatchling; 1 Strength)",
             "Flavor": "A harpy egg omelet - a delicious delicacy, good sir. Quite dear, too, for as you might surmise, the wretches don't part with their eggs willingly."
         },
         "25005": {

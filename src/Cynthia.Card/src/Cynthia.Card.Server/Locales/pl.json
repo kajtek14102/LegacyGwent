@@ -1249,7 +1249,7 @@
         },
         "24018": {
             "Name": "Harpia Celaeno",
-            "Info": "Rozmieszczenie: Stwórz 2 Jaja Harpii.\n(Jajo harpii; 1 pkt siły; po pochłonięciu przez inną jednostkę wzmocnij tę jednostkę o dodatkowe 5.\nZemsta: stwórz Piskle Harpi w losowym rzędzie)\n(Piskle Harpi; 1 siła)",
+            "Info": "Rozmieszczenie: Stwórz 2 Jaja Harpii.\n(Jajo harpii; 1 pkt siły; po pochłonięciu przez inną jednostkę wzmocnij tę jednostkę o dodatkowe 4.\nZemsta: stwórz Piskle Harpi w losowym rzędzie)\n(Piskle Harpi; 1 siła)",
             "Flavor": "Zwykłe harpie żywią się padliną. A Celaeno – snami."
         },
         "24019": {
@@ -1369,7 +1369,7 @@
         },
         "25004": {
             "Name": "Jajo Harpii",
-            "Info": "Po pochłonięciu wzmocnij pochłaniającą jednostkę o 5.\nZemsta: Stwórz Piskle Harpi w losowym rzędzie.\n(Piskle Harpi; 1 siła)",
+            "Info": "Po pochłonięciu wzmocnij pochłaniającą jednostkę o dodatkowe 4.\nZemsta: Stwórz Piskle Harpi w losowym rzędzie.\n(Piskle Harpi; 1 siła)",
             "Flavor": "Omlet z jaj harpii to prawdziwy rarytas. Ale, jak waszmość może sobie wyobrazić, harpie nie dzielą się nimi zbyt ochoczo."
         },
         "25005": {
