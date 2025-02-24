@@ -6,12 +6,17 @@ using System.Linq;
 using Assets.Script.Localization;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CardContent : MonoBehaviour
 {
     public Text CardNameText;
+    public TextMeshProUGUI CardNameTextMesh;
     public Text TagsText;
+    public TextMeshProUGUI TagsTextMesh;
     public Text CardInfoText;
+    public TextMeshProUGUI CardInfoTextMesh;
+
 
     public Image Head;
     public Image Bottom;
@@ -72,22 +77,24 @@ public class CardContent : MonoBehaviour
 
         var translator = DependencyResolver.Container.Resolve<LocalizationService>();
 
-        CardInfoText.text = translator.IsContainsKey(cardStatus.Info) ? translator.GetText(cardStatus.Info) : translator.GetCardInfo(cardStatus.CardId);
-        CardNameText.text = translator.GetCardName(cardStatus.CardId);
+        CardInfoTextMesh.text = translator.IsContainsKey(cardStatus.Info) ? translator.GetText(cardStatus.Info) : translator.GetCardInfo(cardStatus.CardId);
 
-        TagsText.text = cardStatus.Categories.Select(x => GwentMap.CategorieInfoMap[x])
+        CardNameTextMesh.text = translator.GetCardName(cardStatus.CardId);
+
+        TagsTextMesh.text = cardStatus.Categories.Select(x => GwentMap.CategorieInfoMap[x])
             .ForAll(t => t = translator.GetText($"CardTag_{t}")).Join(", ");
 
         var immuneTag = translator.GetText("CardTag_Immune");
         if (cardStatus.IsImmue)
         {
-            TagsText.text += string.IsNullOrWhiteSpace(TagsText.text) ? immuneTag : $", {immuneTag}";
+            TagsTextMesh.text += string.IsNullOrWhiteSpace(TagsTextMesh.text) ? immuneTag : $", {immuneTag}";
         }
         var doomedTag = translator.GetText("CardTag_Doomed");
-        if (cardStatus.IsDoomed && !TagsText.text.Contains(doomedTag))
+        if (cardStatus.IsDoomed && !TagsTextMesh.text.Contains(doomedTag))
         {
-            TagsText.text += string.IsNullOrWhiteSpace(TagsText.text) ? doomedTag : $", {doomedTag}";
+            TagsTextMesh.text += string.IsNullOrWhiteSpace(TagsTextMesh.text) ? doomedTag : $", {doomedTag}";
         }
-        Content.sizeDelta = new Vector2(Content.sizeDelta.x, CardInfoText.preferredHeight + 115);
+        //Content.sizeDelta = new Vector2(Content.sizeDelta.x, CardInfoText.preferredHeight + 115);
+        Content.sizeDelta = new Vector2(Content.sizeDelta.x, CardInfoTextMesh.preferredHeight + 115);
     }
 }
