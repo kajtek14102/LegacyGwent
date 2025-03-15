@@ -8,7 +8,7 @@ using UnityEngine.AddressableAssets;
 using Cynthia.Card;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
-//using TMPro;
+using TMPro;
 
 public class righclickLogic : MonoBehaviour
 {
@@ -34,6 +34,11 @@ public class righclickLogic : MonoBehaviour
     public Text TagsDisplay;
     public Text FlavourDisplay;
     public Text AbilityDisplay;
+
+    public TMP_Text  TagsDisplayTMP;
+    public TMP_Text  FlavourDisplayTMP;
+    public TMP_Text  AbilityDisplayTMP;
+
     
     
     //sprites
@@ -156,9 +161,12 @@ public class righclickLogic : MonoBehaviour
             tagtext = tagtext.Remove(tagtext.Length - 2);
         }
         TagsDisplay.text=tagtext;
+        TagsDisplayTMP.text=tagtext;
 
         AbilityDisplay.text=RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
+        AbilityDisplayTMP.text=RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
         FlavourDisplay.text=translator.GetCardFlavor(CardInfo.CardId);
+        FlavourDisplayTMP.text=translator.GetCardFlavor(CardInfo.CardId);
         LayoutRebuilder.ForceRebuildLayoutImmediate(layoutGroup);
 
         foreach (Transform child in ScrollContent)

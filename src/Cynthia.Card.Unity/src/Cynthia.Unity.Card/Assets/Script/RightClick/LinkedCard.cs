@@ -6,6 +6,7 @@ using Assets.Script.Localization;
 using Autofac;
 using UnityEngine.AddressableAssets;
 using Cynthia.Card;
+using TMPro;
 
 public class LinkedCard : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class LinkedCard : MonoBehaviour
     public Text  NameDisplay;
     public Text TagsDisplay;
     public Text  AbilityDisplay;
+
+    public TMP_Text TagsDisplayTMP;
+    public TMP_Text  AbilityDisplayTMP;
+
     //sprites
     public Sprite CopperBorder;
     public Sprite SilverBorder;
@@ -106,7 +111,9 @@ public class LinkedCard : MonoBehaviour
             tagtext = tagtext.Remove(tagtext.Length - 2);
         }
         TagsDisplay.text=tagtext;
+        TagsDisplayTMP.text=tagtext;
         AbilityDisplay.text = righclickLogic.RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
+        AbilityDisplayTMP.text = righclickLogic.RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
 
     }
 
