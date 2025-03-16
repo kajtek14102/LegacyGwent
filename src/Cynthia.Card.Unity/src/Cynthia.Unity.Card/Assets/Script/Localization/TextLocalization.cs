@@ -61,5 +61,9 @@ namespace Assets.Script.Localization
         {
             return CardTexts.ContainsKey(cardId) ? CardTexts[cardId].Flavor : $"{cardId}_Flavor";
         }
+        public string GetCardEnhancedInfo(string cardId)
+        {
+            return CardTexts.ContainsKey(cardId) ? CardTexts[cardId].EnhancedInfo : $"{cardId}_EnhancedInfo";
+        }
     }
 }
