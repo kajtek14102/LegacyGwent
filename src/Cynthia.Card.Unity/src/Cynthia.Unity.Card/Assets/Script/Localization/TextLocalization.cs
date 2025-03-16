@@ -63,7 +63,11 @@ namespace Assets.Script.Localization
         }
         public string GetCardEnhancedInfo(string cardId)
         {
-            return CardTexts.ContainsKey(cardId) ? CardTexts[cardId].EnhancedInfo : $"{cardId}EnhancedInfo";
+            return CardTexts.ContainsKey(cardId)
+            ? !string.IsNullOrEmpty(CardTexts[cardId].EnhancedInfo)
+                ? CardTexts[cardId].EnhancedInfo
+                : CardTexts[cardId].Info
+            : $"{cardId}_EnhancedInfo";
         }
     }
 }
