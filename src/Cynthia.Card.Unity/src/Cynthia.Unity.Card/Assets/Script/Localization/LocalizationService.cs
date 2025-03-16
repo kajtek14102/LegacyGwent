@@ -28,6 +28,10 @@ namespace Assets.Script.Localization
         {
             return TextLocalization.GetCardFlavor(cardId);
         }
+        public string GetCardEnhancedInfo(string cardId)
+        {
+            return TextLocalization.GetCardEnhancedInfo(cardId);
+        }
 
     }
 }

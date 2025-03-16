@@ -1417,6 +1417,7 @@
         "31004": {
             "Name": "Usurper",
             "Info": "Spying.\nDeploy: Create any Leader and Boost it by 2.",
+            "EnhancedInfo": "Spying.\nDeploy: Create any Leader and Boost it by 2 -enhanced.",
             "Flavor": "Why should something as trivial as birth decide who rules over us?"
         },
         "32001": {

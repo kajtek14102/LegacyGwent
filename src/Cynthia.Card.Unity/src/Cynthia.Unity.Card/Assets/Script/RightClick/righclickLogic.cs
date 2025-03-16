@@ -164,7 +164,8 @@ public class righclickLogic : MonoBehaviour
         TagsDisplayTMP.text=tagtext;
 
         AbilityDisplay.text=RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
-        AbilityDisplayTMP.text=RemoveContentInParentheses(translator.GetCardInfo(CardInfo.CardId));
+
+        AbilityDisplayTMP.text=RemoveContentInParentheses(translator.GetCardEnhancedInfo(CardInfo.CardId));
         FlavourDisplay.text=translator.GetCardFlavor(CardInfo.CardId);
         FlavourDisplayTMP.text=translator.GetCardFlavor(CardInfo.CardId);
         LayoutRebuilder.ForceRebuildLayoutImmediate(layoutGroup);
