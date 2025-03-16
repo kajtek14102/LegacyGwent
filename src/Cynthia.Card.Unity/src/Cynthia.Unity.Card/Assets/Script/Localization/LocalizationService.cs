@@ -32,7 +32,5 @@ namespace Assets.Script.Localization
         {
             return TextLocalization.GetCardEnhancedInfo(cardId);
         }
-        
-
     }
 }
