@@ -7,6 +7,7 @@ namespace Cynthia.Card.Common.Models.Localization
     {
         public string Name;
         public string Info;
+        public string EnhancedInfo;
         public string Flavor;
     }
 }
